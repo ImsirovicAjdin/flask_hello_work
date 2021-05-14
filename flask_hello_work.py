@@ -21,3 +21,19 @@ class Person(db.Model): # (9)
 db.create_all() # (10)
 
 # (11) Run the app with: FLASK_APP=flask_hello_work.py FLASK_DEBUG=true flask run
+# (12) Run psql
+# ```
+# psql hello_work
+# ```
+# (13) Verify that the `persons` table exists
+# ```
+# \dt # shows the `persons` table is there
+# ```
+# (14) Verify the structure of the `persons` table
+# ```
+# \d persons # shows the structure of the `persons` table
+# ```
+# (15) Insert your name into the `persons` table
+# ```
+# INSERT INTO persons (name) VALUES ('Ajdin');
+# ```
