@@ -19,3 +19,5 @@ class Person(db.Model): # (9)
     name = db.Column(db.String(), nullable=False)
 
 db.create_all() # (10)
+
+# (11) Run the app with: FLASK_APP=flask_hello_work.py FLASK_DEBUG=true flask run
