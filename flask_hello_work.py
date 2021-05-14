@@ -6,6 +6,8 @@ from flask_sqlalchemy import SQLAlchemy # (6)
 
 app = Flask(__name__) # (2)
 
+db = SQLAlchemy(app) # (7)
+
 @app.route('/') # (3)
 def index(): # (4)
     return "Hello work!" # (5)
