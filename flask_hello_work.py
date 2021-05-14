@@ -43,3 +43,4 @@ db.create_all() # (10)
 # ```
 # INSERT INTO persons (name) VALUES ('Ajdin');
 # ```
+# (17) Fetch the newly added person in our `@app.route('/')`
