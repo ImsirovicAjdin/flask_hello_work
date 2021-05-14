@@ -12,3 +12,8 @@ app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql:///hello_work' # (8)
 @app.route('/') # (3)
 def index(): # (4)
     return "Hello work!" # (5)
+
+class Person(db.Model): # (9)
+    __tablename__ = 'persons'
+    id = db.Column(db.Integer, primary_key=True)
+    name = db.COlumn(db.String(), nullable=False)
