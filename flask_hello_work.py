@@ -16,4 +16,6 @@ def index(): # (4)
 class Person(db.Model): # (9)
     __tablename__ = 'persons'
     id = db.Column(db.Integer, primary_key=True)
-    name = db.COlumn(db.String(), nullable=False)
+    name = db.Column(db.String(), nullable=False)
+
+db.create_all() # (10)
