@@ -2,6 +2,7 @@
 # mkdir hello_work && cd hello_work && touch flask_hello_work.py && code .
 
 from flask import Flask # (1)
+from flask_sqlalchemy import SQLAlchemy # (6)
 
 app = Flask(__name__) # (2)
 
