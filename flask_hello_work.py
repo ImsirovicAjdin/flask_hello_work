@@ -8,6 +8,7 @@ app = Flask(__name__) # (2)
 
 db = SQLAlchemy(app) # (7)
 app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql:///hello_work' # (8)
+app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False # (18)
 
 @app.route('/') # (3)
 def index(): # (4)
